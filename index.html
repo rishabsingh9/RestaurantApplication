@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add User Form</title>
+  <link rel="shortcut icon" href="#" />
+  <!-- Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Restaurant</h1>
+    <form class="row g-3" id="formid">
+        <div class="col-md-3">
+            <div class="input-group">
+                <label for="expense" class="input-group-text">Choose Price:</label>
+                <input type="text" class="form-control" id="price">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+                <label for="des" class="input-group-text">Choose a Dish:</label>
+                <input type="text" class="form-control" id="dish">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+                <label for="category" class="input-group-text">Choose a Table:</label>
+                <select id="tables">
+                    <option value="Table1">Table 1</option>
+                    <option value="Table2">Table 2</option>
+                    <option value="Table3">Table 3</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <button id="butone" type="submit" >Add to bill</button>
+        </div>
+    </form>
+    <div class="container">
+      <h2>Orders</h2>
+      <ul id="ul1"><h3>Table1</h3></ul>
+      <ul id="ul2"><h3>Table2</h3></ul>
+      <ul id="ul3"><h3>Table3</h3></ul>
+    </div>
+</div>
+  <!-- Bootstrap JS and Popper.js scripts (required for some Bootstrap components) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
